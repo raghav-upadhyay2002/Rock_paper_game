@@ -6,16 +6,10 @@ def get_choices():
     options = ["rock", "paper", "scissors"]
     computer_choice = random.choice(options)
     choices = {"player": player_choice, "computer": computer_choice}
-    # to access a dic-->using above example
-    # p_choice= choices["computer"]
     return choices
 
 
 def check_win(player, computer):
-    # print("You chose " + player+", Computer chose "+computer)
-    # or use f before string to make above print function
-    # easier eg. print("your age is "+ age)
-    # we can write it as (f"your age is {age})
     print(f"Your chose {player}, computer chose {computer}")
     if player == computer:
         return "It's a tie!!"
